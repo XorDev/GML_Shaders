@@ -6,7 +6,7 @@
 #define round(x)	  floor((x)+0.5)
 #define lerp(a,b,x) mix(a,b,x)
 
-//Comparison functions
+//Comparison functions (number depends on arguments)
 #define max3(a,b,c)		    max(a,max(b,c))
 #define max4(a,b,c,d)	    max(a,max(b,max(c,d)))
 #define max5(a,b,c,d,e)   max(a,max(b,max(c,max(d,e))))
