@@ -10,7 +10,7 @@
 #define xor ^^
 
 // General functions
-#define frac(x)         (fract(abs(x)) * sign(x))
+#define frac(x)         (fract(abs(x)) * sign(x))  // TODO: replace with function, will not work with impure code passed as argument
 #define round(x)        floor((x) + 0.5)
 #define lerp(a, b, x)   mix((a), (b), (x))
 
@@ -27,7 +27,7 @@
 #define mean5(a, b, c, d, e)    (((a) + (b) + (c) + (d) + (e)) / 5.0)
 
 // Exponent functions
-#define sqr(x)      ((x) * (x))
+#define sqr(x)      ((x) * (x))  // TODO: replace with function, will not work with impure code passed as argument
 #define power(x, y) pow((x), (y))
 #define log10(x)    (log(x) / log(10.0))
 #define logn(b, x)  (log(x) / log(b))
@@ -55,7 +55,7 @@
 
 // Vector functions
 #define point_direction(x1, y1, x2, y2)                     mod(degrees(atan((y2) - (y1), (x2) - (x1))), 360.0)
-#define point_direction_vec(p1, p2)                         mod(degrees(atan(((p2) - (p1)).x, ((p2) - (p1)).y)), 360.0)
+#define point_direction_vec(p1, p2)                         mod(degrees(atan(((p2) - (p1)).x, ((p2) - (p1)).y)), 360.0)  // TODO: replace with function, will not work with impure code passed as argument
 #define point_distance(x1, y1, x2, y2)                      distance(vec2((x1), (y1)), vec2((x2), (y2)))
 #define point_distance_3d(x1, y1, z1, x2, y2, z2)           distance(vec3((x1), (y1), (z1)), vec3((x2), (y2), (z2)))
 #define point_distance_vec(p1, p2)                          distance((p1), (p2))
