@@ -44,7 +44,7 @@
 #define arctan2(y,x)    atan(y, x)
 
 //Angle functions
-#define angle_difference(d,s)   (mod(d-s+180.0, 360.0)-180.0)
+#define angle_difference(d,s)   (mod((d)-(s)+180.0, 360.0)-180.0)
 #define degtorad(x)             radians(x)
 #define radtodeg(x)             degrees(x)
 #define lengthdir_x(l,d)        +(l)*cos(radians(d))
