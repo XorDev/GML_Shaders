@@ -1,3 +1,6 @@
+#ifndef GLM_FUNCTION_LIST
+#define GLM_FUNCTION_LIST
+
 // Pi constant
 #define pi 3.1415926535897932384626433832795
 
@@ -69,3 +72,5 @@ float __RNG_SEED__ = 0.0;
 #define irandom(x)          floor((x)*fract(cos(++__RNG_SEED__ * 97.) * 4e3))
 #define random_set_seed(s)  (__RNG_SEED__ = (s))
 #define random_get_seed()  (__RNG_SEED__ + 0.0)
+
+#endif
