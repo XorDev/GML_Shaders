@@ -1,8 +1,13 @@
 //Pi constant
-#define pi 3.1415926535897932384626433832795
+#define pi	3.1415926535897932384626433832795
+
+//Operations
+#define and &&
+#define or	||
+#define xor ^^
 
 //General functions
-#define frac(x)         fract(abs(x))*sign(x)
+#define frac(x)         fract(abs(x)) * sign(x)
 #define round(x)        floor((x)+0.5)
 #define lerp(a,b,x)     mix(a,b,x)
 
