@@ -3,7 +3,7 @@
 
 //Operations
 #define and &&
-#define or	||
+#define or  ||
 #define xor ^^
 
 //General functions
