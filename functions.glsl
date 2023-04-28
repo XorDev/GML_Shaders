@@ -68,4 +68,4 @@ float __RNG_SEED__ = 0.0;
 #define random(x)           ((x) * fract(cos(++__RNG_SEED__ * 97.) * 4e3))
 #define irandom(x)          floor((x)*fract(cos(++__RNG_SEED__ * 97.) * 4e3))
 #define random_set_seed(s)  (__RNG_SEED__ = (s))
-#define random_get_seed(s)  (__RNG_SEED__ + 0.0)
+#define random_get_seed()  (__RNG_SEED__ + 0.0)
